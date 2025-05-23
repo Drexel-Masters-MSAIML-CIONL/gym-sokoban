@@ -30,6 +30,18 @@ class SokobanEnv2(SokobanEnv):
         super(SokobanEnv2, self).__init__(**kwargs)
 
 
+class SokobanEnv_Tiny0(SokobanEnv):
+    metadata = {
+        'render.modes': ['human', 'rgb_array', 'tiny_human', 'tiny_rgb_array'],
+        'render_modes': ['human', 'rgb_array', 'tiny_human', 'tiny_rgb_array'],
+    }
+
+    def __init__(self, **kwargs):
+        kwargs['dim_room'] = kwargs.get('dim_room', (3, 3))
+        kwargs['max_steps'] = kwargs.get('max_steps', 200)
+        kwargs['num_boxes'] = kwargs.get('num_boxes', 1)
+        super(SokobanEnv_Tiny0, self).__init__(**kwargs)
+
 class SokobanEnv_Small0(SokobanEnv):
     metadata = {
         'render.modes': ['human', 'rgb_array', 'tiny_human', 'tiny_rgb_array'],

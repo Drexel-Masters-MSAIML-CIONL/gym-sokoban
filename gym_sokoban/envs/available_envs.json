@@ -16,6 +16,10 @@
     "entry_point": "gym_sokoban.envs:SokobanEnv_Small0"
   },
   {
+    "id": "Sokoban-tiny-v0",
+    "entry_point": "gym_sokoban.envs:SokobanEnv_Tiny0"
+  },
+  {
     "id": "Sokoban-small-v1",
     "entry_point": "gym_sokoban.envs:SokobanEnv_Small1"
   },
